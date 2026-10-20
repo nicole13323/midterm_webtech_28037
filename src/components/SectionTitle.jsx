@@ -1,0 +1,12 @@
+// Reusable heading used by every section
+function SectionTitle({ number, title, subtitle }) {
+  return (
+    <div className="section-title">
+      <span className="section-number">{number}</span>
+      <h2>{title}</h2>
+      {subtitle && <p>{subtitle}</p>}
+    </div>
+  );
+}
+
+export default SectionTitle;
